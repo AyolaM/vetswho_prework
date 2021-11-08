@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayola Mgqolozana</title>
+    <link rel="stylesheet" href="Ayola.css" />
+    <script defer src="Ayola.js"></script>
+    <!-- google font -->
+
+    <!-- Font awesome cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- animate.css -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="nav">
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="https://twitter.com/ayola_uyaphi" class="fab fa-twitter"></a>
+        <a
+          href="https://www.linkedin.com/in/ayola-mgqolozana-4292a4164/"
+          class="fab fa-linkedin"
+        ></a>
+        <a href="https://github.com/AyolaM" class="fab fa-github"></a>
+        <a href="https://codepen.io/ayolam" class="fab fa-codepen"></a>
+        <a href="https://dev.to/ayolam" class="fab fa-dev"></a>
+      </nav>
+    </div>
+    <div>
+      <section>
+        <h2>About Me</h2>
+        <p>
+          I am an Air Force veteran who recently graduated from a Full-stack
+          Python bootcamp. I'm currently searching for entry- level software
+          developer roles and opportunies to advance my front-end knowledge.
+          I've done my research on UI and React.js is the most commonly used
+          JavaScript UI library which is why I have decided to apply to this
+          program.
+        </p>
+        <img src="pic.JPG" alt="Air force promotion" />
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul class="edu">
+          <li>PDX Code Guild - 2021</li>
+          <li>Howard University - 2019</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="skil">
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>jQuery</li>
+          <li>Django</li>
+          <li>XML</li>
+        </ul>
+      </section>
+    </div>
+
+    <h2>Your Turn</h2>
+
+    <button onclick="myFunction()">About You</button>
+
+    <p id="try"></p>
+
+    <script>
+      function myFunction() {
+        let text;
+        let person = prompt("What's your name:", "Ayola Mgqolozana");
+        if (person == null || person == "") {
+          text = "Ahh...you're no fun";
+        } else {
+          text = "Hi " + person + "! How are you today?";
+        }
+        document.getElementById("try").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
